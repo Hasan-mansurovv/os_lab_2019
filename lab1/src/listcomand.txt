@@ -1,0 +1,21 @@
+./background.sh > lab1num1.txt
+clear
+cat lab1num1.txt| wc -m
+67
+
+
+cat cake_rhymes.txt | grep -i "cake" > with_cake.txt
+
+ rm test.txt > /dev/null
+
+chmod u+x ./hello.sh
+./hello.sh
+
+chmod 755 ./numbers.sh 
+./numbers.sh 
+
+chmod 755 ./average.sh
+./average.sh
+
+Среднее значение= 116
+Число элементов= 150

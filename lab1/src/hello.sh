@@ -1,3 +1,7 @@
-#!/bin/sh
 
-echo "Hello, world!"
+
+pwd
+
+date
+
+echo $PATH
