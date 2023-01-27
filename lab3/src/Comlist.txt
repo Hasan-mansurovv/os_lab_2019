@@ -1,0 +1,25 @@
+1
+gcc sequential_min_max.c utils.c find_min_max.c -o sequental -std=c99
+./sequental 2 10 
+min: 142559277
+max: 1738766719
+
+2 and 3
+gcc parallel_min_max.c find_min_max.c utils.c -o parallel -std=c99
+ 
+./parallel --seed 34 --array_size 13 --pnum 5
+Min: 61391368
+Max: 1829386774
+Elapsed time: 0.447000ms
+
+ ./parallel --seed 34 --array_size 13 --pnum 5 --by_files
+Min: 61391368
+Max: 1829386774
+Elapsed time: 1.150000ms
+
+4
+make 
+
+5
+make parallel_sequential
+./parallel_sequential 34 13 
