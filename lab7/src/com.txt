@@ -1,0 +1,7 @@
+./tcpserver.o --port 21005 --bufsize 4
+
+./tcpclient.o --port 21005 --bufsize 4 --ip 127.0.0.1
+
+./udpserver.o --port 21005 --bufsize 4
+
+./udpclient.o --port 21005 --bufsize 4 --ip 127.0.0.1
